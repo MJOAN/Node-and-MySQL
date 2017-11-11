@@ -1,0 +1,33 @@
+{
+  "name": "node-and-mysql",
+  "version": "1.0.0",
+  "description": "amazon checkout cli system tracking inventory and cost",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJOAN/Node-and-MySQL.git"
+  },
+  "keywords": [
+    "bamazon",
+    "mysql",
+    "quantity",
+    "units",
+    "order",
+    "sale",
+    "total",
+    "node"
+  ],
+  "author": "MJOAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJOAN/Node-and-MySQL/issues"
+  },
+  "homepage": "https://github.com/MJOAN/Node-and-MySQL#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0",
+    "mysql": "^2.15.0"
+  }
+}
