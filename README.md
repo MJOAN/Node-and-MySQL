@@ -23,7 +23,7 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
 
 1. Create a MySQL Database called `bamazon`.
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](mysql_schema.png)
 
 *MySQL Database created called `bamazon`.*
 
@@ -46,19 +46,19 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
 
    * stock_quantity (how much of the product is available in stores)
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](msql_structure.png)
 
 *MySQL Database products table created with desciptive columns for id, product name, department name, price, and stock.*
 
 4. Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](mysql_content.png)
 
 *MySQL Database products table created populated with 10 products.*
 
 5. Then create a Node application called `bamazonCustomer.js`. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](node_products.png)
 
 *Node.js application `bamazonCustomer.js` showing all products for sale.*
 
@@ -67,7 +67,7 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
    * The first should ask them the ID of the product they would like to buy.
    * The second message should ask how many units of the product they would like to buy.
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](inquirer_customer_prompt.png)
 
 *Node.js application `bamazonCustomer.js` showing user prompts.*
 
@@ -79,7 +79,7 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, show the customer the total cost of their purchase.
 
-![Node Screenshot 7](http://i.imgur.com/tFd6cbJ.png)
+![Node Screenshot 7](node_final_order_totals.png)
 
 *Node.js application `bamazonCustomer.js` showing if product is not in stock. Then updating MySQL inventory
 to show user final order total amount.*
@@ -111,6 +111,9 @@ to show user final order total amount.*
 
   * If a manager selects `Add New Product`, it should allow the manager to add a completely new product to the store.
 
+![Node Screenshot 7](node_inquirer_manager_prompt.png)
+
+*Node.js application `bamazonManager.js` showing inquirer prompts.*
 - - -
 
 * If you finished Challenge #2 and put in all the hours you were willing to spend on this activity, then rest easy! Otherwise continue to the next and final challenge.
