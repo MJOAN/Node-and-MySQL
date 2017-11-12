@@ -47,3 +47,4 @@ VALUES (4365, "How Computers Work", "Books", 32.10, 35);
 /* UPDATE OPTIONS*/
 UPDATE stock_quantity SET stock_quantity = stock_quantity - (SELECT SUM(?) FROM products);
 UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];
+UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ? AND price, [units, item];
