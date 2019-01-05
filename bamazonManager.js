@@ -25,6 +25,8 @@ connection.connect(function(err) { // here we show user SQL products table upon 
     });
 });
 
+
+
 function start() { // prompt user choices to start ===> answer for switch case
     inquirer
         .prompt({
@@ -55,9 +57,9 @@ function start() { // prompt user choices to start ===> answer for switch case
                 case "Add new product":
                     addProduct(); // add a completely new product to the store
                     break;
-            }
-        });
-};
+                }
+            });
+    };
 
 function saleProducts() {
     connection.query("SELECT item_id, product_name, price, stock_quantity FROM products", function(error, result) {
@@ -180,6 +182,7 @@ function saleProducts() {
                             console.log('Department name: ' + result[0].department_name);
                             console.log('Price: $' + result[0].price);
                             console.log('Stock Quantity: ' + result[0].stock_quantity);
+                            start();
                         };
                     });
             });
